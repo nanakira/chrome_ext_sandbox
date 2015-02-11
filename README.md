@@ -1,1 +1,1 @@
-This repository is my sandbox for Chrome Extention trial.
+This repository is my sandbox for Chrome Extension trial.
