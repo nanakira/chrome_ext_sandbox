@@ -1,17 +1,17 @@
 {
   "manifest_version": 2,
-
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "Content script example",
+  "description": "Trial of content_scripts",
   "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html",
-    "default_title": "Click here!"
-  },
   "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
+    "tabs",
+    "https://www.google.co.jp/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.co.jp/*"],
+      "js": ["myscript.js"],
+      "run_at": "document_end"
+    }
   ]
 }
