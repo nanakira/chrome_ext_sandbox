@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.google.co.jp/*"],
-      "js": ["myscript.js"],
+      "js": ["content_script.js"],
       "run_at": "document_end"
     }
   ]
