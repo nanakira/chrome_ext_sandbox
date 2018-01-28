@@ -1,0 +1,14 @@
+{
+  "name": "Scraper",
+  "version": "0.0.1",
+  "description": "Scrape DOMs",
+  "icons": { "128": "progress.png" },
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "progress.png"
+  },
+  "manifest_version": 2
+}
